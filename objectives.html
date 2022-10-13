@@ -222,7 +222,7 @@
 
 <section class="container-element editable-style silex-id-1538221038117-34 section-element hide-on-desktop prevent-resizable"><div class="editable-style silex-id-1538221038114-33 container-element silex-element-content website-width"><div class="editable-style silex-id-1552775712222-12 text-element silex-component prevent-resizable hide-on-desktop nav prevent-auto-z-index"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1665674311592_353 closed">
+<div class="hamburger-menu_1665677681841_332 closed">
     <div class="hamburger-btn fixed">
       <span></span>
       <span></span>
@@ -241,7 +241,7 @@
             
                 <li><a href="how-to-help.html">How to help</a></li>
             
-                <li><a href="contact.html" class="">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             
             </ul>
         </nav>
@@ -253,13 +253,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1665674311592_353').classList.remove('open');
-    document.querySelector('.hamburger-menu_1665674311592_353').classList.add('closed');
+    document.querySelector('.hamburger-menu_1665677681841_332').classList.remove('open');
+    document.querySelector('.hamburger-menu_1665677681841_332').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1665674311592_353').classList.add('open');
-    document.querySelector('.hamburger-menu_1665674311592_353').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1665677681841_332').classList.add('open');
+    document.querySelector('.hamburger-menu_1665677681841_332').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -269,7 +269,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1665674311592_353').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1665677681841_332').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -277,10 +277,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1665674311592_353 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1665677681841_332 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1665674311592_353 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1665677681841_332 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
@@ -327,7 +327,9 @@
           Learning and Deep Learning with a focus on applications in
           Astronomy.</p><p>Curriculum Lattes: <a href="http://lattes.cnpq.br/4029076266456816" target="_blank">http://lattes.cnpq.br/4029076266456816</a><br></p><p>Prof. Rita Cassia Domingos, UNESP, São João da Boa Vista, SP, Brazil.&nbsp; Her research interests focus on the dynamics of exoplanets, asteroid dynamics and machine learning applications to Astronomy.</p><p>Curriculum Lattes: <a href="http://lattes.cnpq.br/6652169083464327">http://lattes.cnpq.br/6652169083464327<br></a></p><p>Prof. Mariela Huaman Espinoza, UTP, Lima, Lima, 
 Peru. Her research interests are dynamical astronomy with an emphasis on 
-asteroids and secular resonances.</p><p>Curriculum Lattes: <a href="http://lattes.cnpq.br/2261573689415746" target="_blank">http://lattes.cnpq.br/2261573689415746<br></a></p><p>Bruno dos Santos Martins: 
+asteroids and secular resonances.</p><p>Curriculum Lattes: <a href="http://lattes.cnpq.br/2261573689415746" target="_blank">http://lattes.cnpq.br/2261573689415746<br></a></p><p>Ms. Gabriel Caritá. PhD student at INPE, São José dos Campos, SP, Brazil. His interests are in orbital dynamics, retrograde
+ orbits, resonances, chaos, nonlinear dynamics and machine learning 
+applications in nonlinear/orbital dynamics.<br><br>Lattes: <a href="http://lattes.cnpq.br/7679494796031059" target="_blank">http://lattes.cnpq.br/7679494796031059</a><br></p><p>Bruno dos Santos Martins: 
 Physics undergraduate student at UNESP, Guaratinguetá, SP, Brazil. His 
 interests are in asteroids dynamics and machine learning applied to 
 Astronomy.<br>
