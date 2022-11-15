@@ -1,4 +1,4 @@
-<!doctype html><html lang=""><head>
+<!doctype html><html data-lt-installed="true" lang=""><head>
     <title>MASB: Machine Learning applied to Small Bodies - References</title>
     <meta charset="UTF-8">
     <meta name="generator" content="Silex v2.2.14">
@@ -104,7 +104,7 @@
     
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet" class="silex-custom-font"><meta name="viewport" content="width=device-width, initial-scale=1"><script src="js/unslider-min.js"></script><link rel="stylesheet" href="css/unslider.css"><link href="css/MASB.png" rel="shortcut icon"><meta name="description" content="A website dedicated to applications of machine learning to the dynamics of small bodies in the Solar System."><script src="js/script.js"></script><link href="css/styles.css" rel="stylesheet"><style>body { opacity: 0; transition: .25s opacity ease; }</style></head>
 
-<body class="body-initial all-style enable-mobile prevent-resizable prevent-selectable editable-style silex-runtime silex-published" data-current-page="page-references">
+<body class="body-initial all-style enable-mobile prevent-resizable prevent-selectable editable-style silex-runtime silex-published" data-new-gr-c-s-loaded="8.904.0" data-current-page="page-references">
     
     
     
@@ -222,7 +222,7 @@
 
 <section class="container-element editable-style silex-id-1538221038117-34 section-element hide-on-desktop prevent-resizable"><div class="editable-style silex-id-1538221038114-33 container-element silex-element-content website-width"><div class="editable-style silex-id-1552775712222-12 text-element silex-component prevent-resizable hide-on-desktop nav prevent-auto-z-index"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1665752295347_243 closed">
+<div class="hamburger-menu_1668515921716_309 closed">
     <div class="hamburger-btn fixed">
       <span></span>
       <span></span>
@@ -253,13 +253,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1665752295347_243').classList.remove('open');
-    document.querySelector('.hamburger-menu_1665752295347_243').classList.add('closed');
+    document.querySelector('.hamburger-menu_1668515921716_309').classList.remove('open');
+    document.querySelector('.hamburger-menu_1668515921716_309').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1665752295347_243').classList.add('open');
-    document.querySelector('.hamburger-menu_1665752295347_243').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1668515921716_309').classList.add('open');
+    document.querySelector('.hamburger-menu_1668515921716_309').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -269,7 +269,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1665752295347_243').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1668515921716_309').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -277,10 +277,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1665752295347_243 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1668515921716_309 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1665752295347_243 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1668515921716_309 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
@@ -316,14 +316,17 @@
     </section><section class="container-element website-min-width editable-style silex-id-1490694237194-15 section-element prevent-resizable page-references paged-element paged-element-visible">
         <div class="editable-style silex-element-content website-width silex-id-1490694237193-14 container-element">
             <div class="editable-style text-element silex-id-1439554961331-2">
-                <div class="silex-element-content normal">
+                <lt-highlighter style="display: none;" contenteditable="false"><lt-div spellcheck="false" class="lt-highlighter__wrapper" style="width: 924px !important; height: 1057.6px !important; transform: none !important; transform-origin: 462px 528.8px 0px !important; margin-top: 21.4334px !important;"><lt-div class="lt-highlighter__scroll-element" style="top: 0px !important; left: 0px !important; width: 924px !important; height: 1057.6px !important;"><canvas class="lt-highlighter__canvas" style="display: none; top: 59px !important; left: 0px !important;" width="909" height="962"></canvas><canvas class="lt-highlighter__canvas" style="display: none; top: 1024px !important; left: 212px !important;" width="697" height="16"></canvas></lt-div></lt-div></lt-highlighter><div class="silex-element-content normal" data-lt-tmp-id="lt-332522" spellcheck="false" data-gramm="false">
                     <h1>References</h1><p>In this section we report the papers published by our group, divided by the main topic:</p><h2><b>Unsupervised learning</b></h2><p>1) V. Carruba, S. Aljbaae, A. Lucchini (2019), Machine-learning identification of asteroid groups, MNRAS, 488, 1377.</p><p>2) V. Carruba, F. Spoto, W. Barletta, S. Aljbaae ,  À. Fazenda, B. Martins (2020), The population of rotational fission clusters inside asteroid collisional families, Nature Astronomy, 4, 83.</p><p>Github repository: <a href="https://github.com/valeriocarruba/Natastron">https://github.com/valeriocarruba/Natastron<br></a></p><h2><b>Supervised learning</b></h2><p>1) V. Carruba, S. Aljbaae , R. C. Domingos,
 A. Lucchini, P. Furlaneto (2020), Machine learning classification of new
 asteroid families members. MNRAS, 496, 540.</p><p>GitHub repository: <a href="https://github.com/valeriocarrGitHub repository (https://github.com/valeriocarr\ uba/Machine-learning-classification-of-new-asteroid-families-members">https://github.com/valeriocarruba/Machine-learning-classification-of-new-asteroid-families-members<br></a></p><p>2) V. Carruba, S. Aljbaae, R. C. Domingos, (2021), Identification of asteroids groups in the z1 and z2 non-linear secular resonances through genetic algorithms, CMDA, 133, A24.</p><p>3) R. S. Souza, A. Krone-Martins, E. Ishida, V. Carruba, R. C. Domingos, S. Aljbaae, M. Huaman, W. Barletta, (2021), Probabilistic modeling of 
 asteroid diameters from Gaia EDR2 errors, Research Notes of the American
  Astronomical Society, 5, 199.<br></p><p>4) M. V. F. Lourenco, V. Carruba (2022), Genetic optimization of asteroid
 families membership, Frontiers of Astronomy and Space Sciences, 9, A988729.<br></p><h2><b>Deep Learning</b></h2><p>1) V. Carruba, S. Aljbaae, R.C. Domingos, W. Barletta (2021), Artificial Neural Network classification of asteroids in the M1:2 mean-motion resonance with Mars, MNRAS, 504, 692.</p><p>GitHub repository: <a href="https://github.com/valeriocarruba/ANN_Classification_of_M12_resonant_argument_images">https://github.com/valeriocarruba/ANN_Classification_of_M12_resonant_argument_images<br></a></p><p>2) V. Carruba, S. Aljbaae, R. C. Domingos, M. Huaman, W. Barletta (2022), Identifying the population of stable nu6 resonant asteroids using 
-large databases, MNRAS 514, 4803.<br></p><p><b></b></p><h2><b>Time-series analysis</b></h2>1) V. Carruba, S. Aljbaae, R.C. Domingos, M. Huaman, W. Barletta (2021), Chaos identification through the autocorrelation function: the ACF index, CMDA, 133, A38.<br><p>GitHub repository: <a href="https://github.com/valeriocarruba/ACFI-Chaos-identification-through-the-autocorrelation-function-indicator">https://github.com/valeriocarruba/ACFI-Chaos-identification-through-the-autocorrelation-function-ind...</a><br></p><h2><b>Review papers</b></h2>1) V. Carruba, S. Aljbaae, R. C. Domingos , M. Huaman, W. Barletta,(2022), Machine Learning applied to asteroid dynamics, CMDA, 134, A36.<br>
+large databases, MNRAS 514, 4803.</p><p>3) V. Carruba, S. Aljbaae, G. Carita, R. C. Domingos, B. Martins, 
+2022, Optimization of Artificial Neural Networks models applied to
+    the identification of images of asteroids' resonant arguments, CMDA,
+ in press. <br></p><p><b></b></p><h2><b>Time-series analysis</b></h2>1) V. Carruba, S. Aljbaae, R.C. Domingos, M. Huaman, W. Barletta (2021), Chaos identification through the autocorrelation function: the ACF index, CMDA, 133, A38.<br><p>GitHub repository: <a href="https://github.com/valeriocarruba/ACFI-Chaos-identification-through-the-autocorrelation-function-indicator">https://github.com/valeriocarruba/ACFI-Chaos-identification-through-the-autocorrelation-function-ind...</a><br></p><h2><b>Review papers</b></h2>1) V. Carruba, S. Aljbaae, R. C. Domingos , M. Huaman, W. Barletta,(2022), Machine Learning applied to asteroid dynamics, CMDA, 134, A36.<br>
                 </div>
             </div>
         </div>
@@ -357,4 +360,4 @@ large databases, MNRAS 514, 4803.<br></p><p><b></b></p><h2><b>Time-series analys
                 </div></a><a class="editable-style text-element silex-id-1610888976547-14 nav-mark nav hide-on-mobile page-link-active" href="references.html"><div class="silex-element-content normal"><p>References<br></p>
                 </div></a><div class="editable-style text-element silex-id-1610888987840-16 nav-mark nav hide-on-mobile"><div class="silex-element-content normal"><p><a href="contact.html" class="">Contact</a></p>
                 </div></div></div>
-    </section></body></html>
+    </section><lt-toolbar style="display: none;" data-lt-force-appearance="dark" contenteditable="false"><lt-div class="lt-toolbar__wrapper" style="left: 1012px; position: fixed !important; top: auto !important; bottom: 12px !important; z-index: 10;"><lt-div class="lt-toolbar__premium-icon"></lt-div><lt-div class="lt-toolbar__status-icon lt-toolbar__status-icon-has-errors lt-toolbar__status-icon-has-9plus-errors" title="LanguageTool - Spelling and Grammar Check"></lt-div></lt-div></lt-toolbar><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></body></html>
