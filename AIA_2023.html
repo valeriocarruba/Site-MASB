@@ -306,12 +306,12 @@
             
             
             
-        <div data-silex-type="text-element" class="editable-style silex-id-1552774225668-8 text-element prevent-resizable silex-component hide-on-desktop mobile-menu nav prevent-auto-z-index" data-silex-id="silex-id-1552774225668-8"><div class="silex-element-content normal"><style>.hamburger-menu_1675783572874_963 {position: absolute; z-index: 20;}.silex-editor .hamburger-menu_1675783572874_963 nav {left: -9999px;}.hamburger-menu_1675783572874_963 nav ul {margin-top: 80px;}.hamburger-menu_1675783572874_963 nav {opacity: 0; position: absolute; background-color: #ededed; transition: left 1s ease, height 0s ease 1s; left: -300px; width: 300px; height: 20px;}.hamburger-menu_1675783572874_963.open nav {opacity: 1; height: 100vh; left: 0; transition: left 1s ease, height 0s ease 0s;}.hamburger-menu_1675783572874_963 .nav-container {z-index: 10; position: absolute;}.hamburger-menu_1675783572874_963.open .nav-container {}.hamburger-menu_1675783572874_963 .hamburger-btn {z-index: 20; cursor: pointer; position: absolute;}.hamburger-menu_1675783572874_963 .hamburger-btn span {display: block; width: 30px; height: 5px; margin-bottom: 3px; position: relative; background-color: #000000; border: 1px solid #ffffff; border-radius: 3px; transition: border-color 0.1s ease-in,
+        <div data-silex-type="text-element" class="editable-style silex-id-1552774225668-8 text-element prevent-resizable silex-component hide-on-desktop mobile-menu nav prevent-auto-z-index" data-silex-id="silex-id-1552774225668-8"><div class="silex-element-content normal"><style>.hamburger-menu_1675783781817_422 {position: absolute; z-index: 20;}.silex-editor .hamburger-menu_1675783781817_422 nav {left: -9999px;}.hamburger-menu_1675783781817_422 nav ul {margin-top: 80px;}.hamburger-menu_1675783781817_422 nav {opacity: 0; position: absolute; background-color: #ededed; transition: left 1s ease, height 0s ease 1s; left: -300px; width: 300px; height: 20px;}.hamburger-menu_1675783781817_422.open nav {opacity: 1; height: 100vh; left: 0; transition: left 1s ease, height 0s ease 0s;}.hamburger-menu_1675783781817_422 .nav-container {z-index: 10; position: absolute;}.hamburger-menu_1675783781817_422.open .nav-container {}.hamburger-menu_1675783781817_422 .hamburger-btn {z-index: 20; cursor: pointer; position: absolute;}.hamburger-menu_1675783781817_422 .hamburger-btn span {display: block; width: 30px; height: 5px; margin-bottom: 3px; position: relative; background-color: #000000; border: 1px solid #ffffff; border-radius: 3px; transition: border-color 0.1s ease-in,
       opacity 0.1s ease-in,
       transform 0.1s ease-in,
-      background 0.1s ease-in;}.hamburger-menu_1675783572874_963.open .hamburger-btn span {border-color: rgba(255, 255, 255, 0);}.hamburger-menu_1675783572874_963 .hamburger-btn span:first-child {transform-origin: 4px -2px;}.hamburger-menu_1675783572874_963.open .hamburger-btn span:first-child {transform: rotate(45deg) translate(7px, -4px);}.hamburger-menu_1675783572874_963.open .hamburger-btn span:nth-last-child(2) {opacity: 0;}.hamburger-menu_1675783572874_963 .hamburger-btn span:nth-child(3) {transform-origin: -11px 4px;}.hamburger-menu_1675783572874_963.open .hamburger-btn span:nth-child(3) {transform: rotate(-45deg) translate(0, 12px);}</style>
+      background 0.1s ease-in;}.hamburger-menu_1675783781817_422.open .hamburger-btn span {border-color: rgba(255, 255, 255, 0);}.hamburger-menu_1675783781817_422 .hamburger-btn span:first-child {transform-origin: 4px -2px;}.hamburger-menu_1675783781817_422.open .hamburger-btn span:first-child {transform: rotate(45deg) translate(7px, -4px);}.hamburger-menu_1675783781817_422.open .hamburger-btn span:nth-last-child(2) {opacity: 0;}.hamburger-menu_1675783781817_422 .hamburger-btn span:nth-child(3) {transform-origin: -11px 4px;}.hamburger-menu_1675783781817_422.open .hamburger-btn span:nth-child(3) {transform: rotate(-45deg) translate(0, 12px);}</style>
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1675783572874_963 closed">
+<div class="hamburger-menu_1675783781817_422 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -328,7 +328,7 @@
             
                 <li><a href="#!page-team">Team</a></li>
             
-                <li><a href="#!page-info" class="">Info</a></li>
+                <li><a href="#!page-info">Info</a></li>
             
                 <li><a href="https://www.silex.me/" target="_blank">External link</a></li>
             
@@ -342,13 +342,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1675783572874_963').classList.remove('open');
-    document.querySelector('.hamburger-menu_1675783572874_963').classList.add('closed');
+    document.querySelector('.hamburger-menu_1675783781817_422').classList.remove('open');
+    document.querySelector('.hamburger-menu_1675783781817_422').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1675783572874_963').classList.add('open');
-    document.querySelector('.hamburger-menu_1675783572874_963').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1675783781817_422').classList.add('open');
+    document.querySelector('.hamburger-menu_1675783781817_422').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -358,7 +358,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1675783572874_963').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1675783781817_422').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -366,10 +366,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1675783572874_963 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1675783781817_422 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1675783572874_963 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1675783781817_422 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
@@ -411,7 +411,8 @@ país.</p>
                 <div class="silex-element-content normal">
                     <p><a href="https://aia.iag.usp.br/" target="_top" title="AIA 2022"><i>AIA 2022</i></a>: Workshop presencial organizado pelo Instituto Mauá de Tecnologia, em 30/09/2022. <br></p><p><i><a href="https://aia.iag.usp.br/aia2021" target="_top" title="AIA 2021">AIA 2021</a></i>: Workshop virtual organizado pelo IAG/USP em 27/09/2021<br></p>
                 </div>
-            </div><div data-silex-type="container-element" class="editable-style container-element silex-id-1675783641662-1" data-silex-id="silex-id-1675783641662-1" style=""><div data-silex-type="image-element" class="editable-style image-element silex-id-1675783601171-0" data-silex-id="silex-id-1675783601171-0" style=""><img src="Guara_feg.png"></div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1675783698654-2" data-silex-id="silex-id-1675783698654-2" style=""><div data-silex-type="text-element" class="editable-style text-element silex-id-1675783719150-3" data-silex-id="silex-id-1675783719150-3" style=""><div class="silex-element-content normal"><p>New textLocal</p></div></div></div></div>
+            </div><div data-silex-type="container-element" class="editable-style container-element silex-id-1675783641662-1" data-silex-id="silex-id-1675783641662-1" style=""><div data-silex-type="image-element" class="editable-style image-element silex-id-1675783601171-0" data-silex-id="silex-id-1675783601171-0" style=""><img src="Guara_feg.png"></div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1675783698654-2" data-silex-id="silex-id-1675783698654-2" style=""><div data-silex-type="text-element" class="editable-style text-element silex-id-1675783719150-3" data-silex-id="silex-id-1675783719150-3" style=""><div class="silex-element-content normal"><h2>Local</h2><p>O evento será realizado na sala de seminários do departamento de Matemática da Unesp, Faculdade de Engenharia de Guaratinguetá, Av. Dr. Ariberto Pereira da Cunha 12516.410 -Guaratinguetá
+-SP<br><br></p></div></div></div></div>
     </section><section data-silex-type="container-element" class="container-element website-min-width editable-style silex-id-1484949640479-7 section-element prevent-resizable page-menu page-inscri-es paged-element" data-silex-id="silex-id-1484949640479-7">
         <div data-silex-type="container-element" class="editable-style silex-element-content website-width silex-id-1484949640479-6 container-element" data-silex-id="silex-id-1484949640479-6">
             
