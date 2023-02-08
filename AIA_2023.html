@@ -306,12 +306,12 @@
             
             
             
-        <div data-silex-type="text-element" class="editable-style silex-id-1552774225668-8 text-element prevent-resizable silex-component hide-on-desktop mobile-menu nav prevent-auto-z-index" data-silex-id="silex-id-1552774225668-8"><div class="silex-element-content normal"><style>.hamburger-menu_1675872331892_843 {position: absolute; z-index: 20;}.silex-editor .hamburger-menu_1675872331892_843 nav {left: -9999px;}.hamburger-menu_1675872331892_843 nav ul {margin-top: 80px;}.hamburger-menu_1675872331892_843 nav {opacity: 0; position: absolute; background-color: #ededed; transition: left 1s ease, height 0s ease 1s; left: -300px; width: 300px; height: 20px;}.hamburger-menu_1675872331892_843.open nav {opacity: 1; height: 100vh; left: 0; transition: left 1s ease, height 0s ease 0s;}.hamburger-menu_1675872331892_843 .nav-container {z-index: 10; position: absolute;}.hamburger-menu_1675872331892_843.open .nav-container {}.hamburger-menu_1675872331892_843 .hamburger-btn {z-index: 20; cursor: pointer; position: absolute;}.hamburger-menu_1675872331892_843 .hamburger-btn span {display: block; width: 30px; height: 5px; margin-bottom: 3px; position: relative; background-color: #000000; border: 1px solid #ffffff; border-radius: 3px; transition: border-color 0.1s ease-in,
+        <div data-silex-type="text-element" class="editable-style silex-id-1552774225668-8 text-element prevent-resizable silex-component hide-on-desktop mobile-menu nav prevent-auto-z-index" data-silex-id="silex-id-1552774225668-8"><div class="silex-element-content normal"><style>.hamburger-menu_1675873030921_867 {position: absolute; z-index: 20;}.silex-editor .hamburger-menu_1675873030921_867 nav {left: -9999px;}.hamburger-menu_1675873030921_867 nav ul {margin-top: 80px;}.hamburger-menu_1675873030921_867 nav {opacity: 0; position: absolute; background-color: #ededed; transition: left 1s ease, height 0s ease 1s; left: -300px; width: 300px; height: 20px;}.hamburger-menu_1675873030921_867.open nav {opacity: 1; height: 100vh; left: 0; transition: left 1s ease, height 0s ease 0s;}.hamburger-menu_1675873030921_867 .nav-container {z-index: 10; position: absolute;}.hamburger-menu_1675873030921_867.open .nav-container {}.hamburger-menu_1675873030921_867 .hamburger-btn {z-index: 20; cursor: pointer; position: absolute;}.hamburger-menu_1675873030921_867 .hamburger-btn span {display: block; width: 30px; height: 5px; margin-bottom: 3px; position: relative; background-color: #000000; border: 1px solid #ffffff; border-radius: 3px; transition: border-color 0.1s ease-in,
       opacity 0.1s ease-in,
       transform 0.1s ease-in,
-      background 0.1s ease-in;}.hamburger-menu_1675872331892_843.open .hamburger-btn span {border-color: rgba(255, 255, 255, 0);}.hamburger-menu_1675872331892_843 .hamburger-btn span:first-child {transform-origin: 4px -2px;}.hamburger-menu_1675872331892_843.open .hamburger-btn span:first-child {transform: rotate(45deg) translate(7px, -4px);}.hamburger-menu_1675872331892_843.open .hamburger-btn span:nth-last-child(2) {opacity: 0;}.hamburger-menu_1675872331892_843 .hamburger-btn span:nth-child(3) {transform-origin: -11px 4px;}.hamburger-menu_1675872331892_843.open .hamburger-btn span:nth-child(3) {transform: rotate(-45deg) translate(0, 12px);}</style>
+      background 0.1s ease-in;}.hamburger-menu_1675873030921_867.open .hamburger-btn span {border-color: rgba(255, 255, 255, 0);}.hamburger-menu_1675873030921_867 .hamburger-btn span:first-child {transform-origin: 4px -2px;}.hamburger-menu_1675873030921_867.open .hamburger-btn span:first-child {transform: rotate(45deg) translate(7px, -4px);}.hamburger-menu_1675873030921_867.open .hamburger-btn span:nth-last-child(2) {opacity: 0;}.hamburger-menu_1675873030921_867 .hamburger-btn span:nth-child(3) {transform-origin: -11px 4px;}.hamburger-menu_1675873030921_867.open .hamburger-btn span:nth-child(3) {transform: rotate(-45deg) translate(0, 12px);}</style>
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1675872331892_843 closed">
+<div class="hamburger-menu_1675873030921_867 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -322,7 +322,7 @@
         <nav class="">
             <ul>
             
-                <li><a href="#!page-home" class="">Home</a></li>
+                <li><a href="#!page-home">Home</a></li>
             
                 <li><a href="#!page-menu">Menu</a></li>
             
@@ -342,13 +342,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1675872331892_843').classList.remove('open');
-    document.querySelector('.hamburger-menu_1675872331892_843').classList.add('closed');
+    document.querySelector('.hamburger-menu_1675873030921_867').classList.remove('open');
+    document.querySelector('.hamburger-menu_1675873030921_867').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1675872331892_843').classList.add('open');
-    document.querySelector('.hamburger-menu_1675872331892_843').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1675873030921_867').classList.add('open');
+    document.querySelector('.hamburger-menu_1675873030921_867').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -358,7 +358,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1675872331892_843').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1675873030921_867').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -366,10 +366,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1675872331892_843 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1675873030921_867 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1675872331892_843 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1675873030921_867 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
@@ -474,4 +474,4 @@ Rodrigo Nemmen (IAG)</p><p><b><i>Comitê Local</i></b></p>
 
 <p>Valerio Carruba (Unesp)<br>&nbsp;Othon C. Winter (Unesp)<br>&nbsp;Ernesto Vieira-Neto (Unesp)</p>
                 </div>
-            </div><div data-silex-type="image-element" class="editable-style image-element silex-id-1675695924548-2" data-silex-id="silex-id-1675695924548-2" style=""><img src="unesp.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1675695653347-0" data-silex-id="silex-id-1675695653347-0" style=""><img src="unesp.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1675695763747-1" data-silex-id="silex-id-1675695763747-1" style=""><img src="ftunicamp.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1675695945819-4" data-silex-id="silex-id-1675695945819-4" style=""><img src="ftunicamp.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1675696020643-8" data-silex-id="silex-id-1675696020643-8" style=""><img src="UFABC.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1675696740254-14" data-silex-id="silex-id-1675696740254-14" style=""><img src="LogomarcaMCTI2020.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1675696594532-11" data-silex-id="silex-id-1675696594532-11" style=""><img src="spanet.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1675697576372-27" data-silex-id="silex-id-1675697576372-27" style=""><img src="LogomarcaMCTI2020.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1675698006221-32" data-silex-id="silex-id-1675698006221-32" style=""><img src="iagcompasso_H_0.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1675698067791-34" data-silex-id="silex-id-1675698067791-34" style=""><img src="iagcompasso_H_0.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1675695987547-6" data-silex-id="silex-id-1675695987547-6" style=""><img src="UFABC.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1675696984899-19" data-silex-id="silex-id-1675696984899-19" style=""><img src="spanet.png"></div></div></section></body></html>
+            </div><div data-silex-type="image-element" class="editable-style image-element silex-id-1675695653347-0" data-silex-id="silex-id-1675695653347-0" style=""><img src="unesp.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1675695763747-1" data-silex-id="silex-id-1675695763747-1" style=""><img src="ftunicamp.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1675695945819-4" data-silex-id="silex-id-1675695945819-4" style=""><img src="ftunicamp.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1675696020643-8" data-silex-id="silex-id-1675696020643-8" style=""><img src="UFABC.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1675696740254-14" data-silex-id="silex-id-1675696740254-14" style=""><img src="LogomarcaMCTI2020.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1675696594532-11" data-silex-id="silex-id-1675696594532-11" style=""><img src="spanet.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1675697576372-27" data-silex-id="silex-id-1675697576372-27" style=""><img src="LogomarcaMCTI2020.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1675698006221-32" data-silex-id="silex-id-1675698006221-32" style=""><img src="iagcompasso_H_0.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1675698067791-34" data-silex-id="silex-id-1675698067791-34" style=""><img src="iagcompasso_H_0.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1675695987547-6" data-silex-id="silex-id-1675695987547-6" style=""><img src="UFABC.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1675696984899-19" data-silex-id="silex-id-1675696984899-19" style=""><img src="spanet.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1675695924548-2" data-silex-id="silex-id-1675695924548-2" style=""><img src="unesp.png"></div></div></section></body></html>
