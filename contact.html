@@ -104,7 +104,7 @@
     
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet" class="silex-custom-font"><meta name="viewport" content="width=device-width, initial-scale=1"><script src="js/unslider-min.js"></script><link rel="stylesheet" href="css/unslider.css"><link href="css/MASB.png" rel="shortcut icon"><meta name="description" content="A website dedicated to applications of machine learning to the dynamics of small bodies in the Solar System."><script src="js/script.js"></script><link href="css/styles.css" rel="stylesheet"><style>body { opacity: 0; transition: .25s opacity ease; }</style></head>
 
-<body class="body-initial all-style enable-mobile prevent-resizable prevent-selectable editable-style silex-runtime silex-published" data-new-gr-c-s-loaded="8.904.0" data-current-page="page-contact">
+<body class="body-initial all-style enable-mobile prevent-resizable prevent-selectable editable-style silex-runtime silex-published" data-new-gr-c-s-loaded="14.1163.0" data-current-page="page-contact">
     
     
     
@@ -222,7 +222,7 @@
 
 <section class="container-element editable-style silex-id-1538221038117-34 section-element hide-on-desktop prevent-resizable"><div class="editable-style silex-id-1538221038114-33 container-element silex-element-content website-width"><div class="editable-style silex-id-1552775712222-12 text-element silex-component prevent-resizable hide-on-desktop nav prevent-auto-z-index"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1685547690389_1000 closed">
+<div class="hamburger-menu_1711546470382_602 closed">
     <div class="hamburger-btn fixed">
       <span></span>
       <span></span>
@@ -253,13 +253,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1685547690389_1000').classList.remove('open');
-    document.querySelector('.hamburger-menu_1685547690389_1000').classList.add('closed');
+    document.querySelector('.hamburger-menu_1711546470382_602').classList.remove('open');
+    document.querySelector('.hamburger-menu_1711546470382_602').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1685547690389_1000').classList.add('open');
-    document.querySelector('.hamburger-menu_1685547690389_1000').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1711546470382_602').classList.add('open');
+    document.querySelector('.hamburger-menu_1711546470382_602').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -269,7 +269,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1685547690389_1000').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1711546470382_602').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -277,10 +277,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1685547690389_1000 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1711546470382_602 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1685547690389_1000 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1711546470382_602 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
